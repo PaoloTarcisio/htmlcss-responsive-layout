@@ -27,19 +27,22 @@ a {
 
 .row{
     display: flex;
-}
-
-.col-1-3{
-    width: calc((90% / 3) * 1) ;
-}
-
-.col-2-3{
-    width: calc((90% / 3) * 2) ;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 :root{
     --color-blue: #0084FD;
     --color-blue-light: #B5DDFF;
+    --color-violet: #9792E5;
+}
+
+.my-col-2-3{
+    width: calc((100% / 3) * 2);
+}
+
+.my-col-1-3{
+    width: calc((100% / 3) * 1);
 }
 
 /* 
@@ -52,11 +55,14 @@ header{
 
 header .container{
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    line-height: 3rem;
 }
 
-header .container .logo{
-    display: block;
+header .container .logo img,
+header .container .hamburger-menu i{
+    vertical-align: middle;
 }
 
 header .container .menu{
@@ -67,10 +73,22 @@ header .container .menu{
     MAIN
 */
 
-main .introduction .card{
+main .introduction .row .card{
     background-color: var(--color-blue-light);
-    border: 1px dashed red;
+    margin: 20px;
+    border-radius: 30px;
+    color: #5A6E7F;
 }
+
+main .introduction .row .card h2{
+    color: var(--color-blue);
+}
+
+main .introduction .row .card *{
+    text-align: center;
+    margin: 20px 20px 0 20px;
+}
+
 
 
 /* 
@@ -86,31 +104,20 @@ main .introduction .card{
     TABLET
 */
 
-@media screen and (max-width: 992px) {
-    main{
-        background-color: green;
-    }
-}
 
 
 /* 
     DESKTOP
 */
 
-/* @media screen and (min-width: 992px) {
-    main{
-        background-color: blue;
-    }
-} */
 
 /* 
     DEBUG
 */
 
-.debug header *{
+/* .debug header *{
     border: 1px solid black;
-    min-height: 100px;
-}
+} */
 
 /* .debug main .introduction .row *{
     border: 1px dashed red;

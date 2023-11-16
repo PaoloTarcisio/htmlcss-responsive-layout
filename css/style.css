@@ -45,6 +45,8 @@ a {
     width: calc((100% / 3) * 1);
 }
 
+
+
 /* 
     HEADER
 */
@@ -70,8 +72,12 @@ header .container .menu{
 }
 
 /* 
-    MAIN
+            MAIN
 */
+
+main section:nth-child(even){
+    background-color: var(--color-violet);
+}
 
 main .introduction .row .card{
     background-color: var(--color-blue-light);
@@ -87,6 +93,21 @@ main .introduction .row .card h2{
 main .introduction .row .card *{
     text-align: center;
     margin: 20px 20px 0 20px;
+}
+
+.card-sec-2{
+    margin: 20px;
+}
+
+
+/* 
+    TESTIMONIAL SECTION
+*/
+
+.testimonial-container {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 

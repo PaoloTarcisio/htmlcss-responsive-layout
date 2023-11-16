@@ -106,11 +106,90 @@ main .introduction .row .card *{
 
 .testimonial-container {
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     text-align: center;
 }
 
+.testimonial-container > * {
+    margin-bottom: 20px;
+}
 
+#intro-testimonials {
+    text-transform: uppercase;
+}
+
+
+.card-testimonials{
+    background-color: var(--color-violet);
+    color: white;
+    display: flex;
+    border-radius: 30px;
+}
+
+.card-testimonials div:first-child {
+    width: 30%;
+    margin-right: 15px;
+}
+
+.card-testimonials div * {
+    margin-bottom: 20px;    
+}
+
+.card-testimonials-text {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.virgolette {
+    font-size: 2em;
+    margin-right: 20px;    
+}
+
+/* 
+    features
+*/
+
+.features {
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.card-features {
+    width: calc(90% / 3);
+    background-color: white;
+    color: var(--color-violet);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card-features > * {
+    margin-top: 15px;
+}
+
+.card-features h2 {
+    font-size: 3rem;
+}
+
+.card-features p {
+    margin-bottom: 20px;
+    color: grey;
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+.card-features .violet-button {
+    background-color: var(--color-violet);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+
+/* 
+    about us
+*/
 
 /* 
     FOOTER

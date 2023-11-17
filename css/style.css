@@ -2,7 +2,7 @@
     RESET
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +14,13 @@ ul,ol{
 
 a {
     text-decoration: none;
+}
+
+/* 
+    FONT
+*/
+body * {
+    font-family: 'Noto Sans', sans-serif;
 }
 
 /* 
@@ -45,6 +52,12 @@ a {
     width: calc((100% / 3) * 1);
 }
 
+.my-button {
+    padding: 8px 12px;
+    background-color: white;
+    border-radius: 15px;
+    color: #CFCDF3;
+}
 
 
 /* 
@@ -163,6 +176,7 @@ main .introduction .row .card *{
     color: var(--color-violet);
     padding: 20px;
     border-radius: 20px;
+    margin: 20px auto;
 }
 
 .card-features > * {
@@ -180,7 +194,7 @@ main .introduction .row .card *{
     line-height: 1.5em;
 }
 
-.card-features .violet-button {
+.violet-button {
     background-color: var(--color-violet);
     color: white;
     padding: 5px 20px;
@@ -190,6 +204,74 @@ main .introduction .row .card *{
 /* 
     about us
 */
+
+.about-us {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    color: var(--color-violet);
+}
+
+.about-us-text {
+    width: 65%;
+}
+
+.about-us-text > p,
+.about-us-card p {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.about-us-card {
+    width: 20%;
+}
+
+.about-us-card > * {
+    margin-bottom: 20px;
+}
+
+.about-us-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-us-text p {
+    color: black;
+}
+
+
+/* 
+    get started
+*/
+
+.get-started{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.get-started * {
+    margin-bottom: 20px;
+}
+
+#get-started-intro {
+    text-transform: uppercase;
+    margin: 20px auto;
+    color: #CFCDF3;
+}
+
+.get-started h3 {
+    line-height: 2em;
+    font-size: 1.5em;
+}
+
+.get-started h2 {
+    margin: 20px;
+    font-size: 4em;
+    color: #FEC15E;
+}
+
 
 /* 
     FOOTER
